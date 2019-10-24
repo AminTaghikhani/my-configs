@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec=postman
+Icon=/storage/data/Postman-7.6.0/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;
