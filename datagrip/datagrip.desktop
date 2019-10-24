@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Datagrip
+Exec="/opt/DataGrip-2019.2.3/bin/datagrip.sh" %f
+Icon=/opt/DataGrip-2019.2.3/bin/datagrip.png
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=true
+StartupWMClass=datagrip
