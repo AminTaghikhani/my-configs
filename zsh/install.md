@@ -12,3 +12,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 ```
 
 Set `ZSH_THEME="spaceship"` in your `.zshrc`.
+
+
+powerlevel10k theme
+https://github.com/romkatv/powerlevel10k
