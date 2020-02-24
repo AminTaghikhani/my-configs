@@ -59,7 +59,7 @@ if [[ $MongoDb =~ ^[yY][eE][sS]|[yY]$ ]];then
     sudo touch /etc/yum.repos.d/mongodb-org.repo
     sudo echo "[mongodb]" >> /etc/yum.repos.d/mongodb-org.repo
     sudo echo "name=MongoDB Repository" >> /etc/yum.repos.d/mongodb-org.repo
-    sudo echo "baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/$basearch/" >> /etc/yum.repos.d/mongodb-org.repo
+    sudo echo "baseurl=https://repo.mongodb.org/yum/redhat/\$releasever/mongodb-org/4.2/\$basearch/" >> /etc/yum.repos.d/mongodb-org.repo
     sudo echo "gpgcheck=1" >> /etc/yum.repos.d/mongodb-org.repo
     sudo echo "enabled=1" >> /etc/yum.repos.d/mongodb-org.repo
     sudo echo "gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" >> /etc/yum.repos.d/mongodb-org.repo
