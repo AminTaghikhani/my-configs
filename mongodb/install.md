@@ -12,3 +12,54 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
+
+
+## User Authentication
+```javascript
+use admin;
+// db user
+db.createUser(
+    {
+        user: "user",
+        pwd: passwordPrompt(),
+        roles: [
+            {
+                role: "readWrite",
+                db: "dbName"
+            }
+            ]
+    }
+);
+// admin user
+db.createUser(
+    {
+        user: "admin",
+        pwd: passwordPrompt(),
+        roles: [
+            {
+                role: "userAdminAnyDatabase",
+                db: "admin"
+            },
+            "readWriteAnyDatabase"
+            ]
+    }
+);
+// root user
+db.createUser(
+    {
+        user: "root",
+        pwd: passwordPrompt(),
+        roles: [
+            {
+                role: "root",
+                db: "admin"
+            }
+            ]
+    }
+);
+```
+
+``` bash
+security:
+    authentication: enable
+```
