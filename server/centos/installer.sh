@@ -8,7 +8,7 @@
 #
 
 echo "Hey there."
-echo "Config CentOs Server"
+echo "Config CentOS Server"
 
 echo
 echo "---------------------------------------"
@@ -64,7 +64,7 @@ if [[ $MongoDb =~ ^[yY][eE][sS]|[yY]$ ]];then
     sudo echo "enabled=1" >> /etc/yum.repos.d/mongodb-org.repo
     sudo echo "gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" >> /etc/yum.repos.d/mongodb-org.repo
     sudo yum repolist
-    sudo yum install mongodb-org
+    sudo yum install mongodb-org -y
     sudo systemctl start mongod
     sudo systemctl enable mongod
 fi
