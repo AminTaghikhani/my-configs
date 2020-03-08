@@ -61,5 +61,5 @@ db.createUser(
 
 ``` bash
 security:
-    authentication: enable
+    authorization: enabled
 ```
