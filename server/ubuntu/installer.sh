@@ -53,7 +53,7 @@ fi
 
 if [[ $NODE =~ ^[yY][eE][sS]|[yY]$ ]];then
     curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-    sudo apt-get install -y nodejs gcc-c++ make
+    sudo apt-get install -y nodejs gcc c++ make
 fi
 
 if [[ $MongoDb =~ ^[yY][eE][sS]|[yY]$ ]];then
